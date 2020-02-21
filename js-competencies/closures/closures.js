@@ -10,7 +10,12 @@
 //fairytale should return a function, which returns a string: 
 //time + ", " + heroine + " defeated the evil wizard with " + magicItem
 
-//Code here
+const fairytale = (heroine, magicItem) => {
+  let time = 'A long time ago'
+  return () => {
+    return time + ', ' + heroine + ' defeated the evil wizard with ' + magicItem;
+  }
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -28,7 +33,7 @@ function adventure(mode) {
 
 //What data type is the value returned by calling adventure("plane")?
 
-// var adventureReturns = "function"
+var adventureReturns = "function"
 // var adventureReturns = "string"
 // var adventureReturns = "undefined"
 // var adventureReturns = "object"
@@ -37,19 +42,19 @@ function adventure(mode) {
 //True or false: "origin" is a public variable contained within "adventure".
 
 // var originIsPublic = true
-// var originIsPublic = false
+var originIsPublic = false
 
 
 //True or false: the function returned from "adventure" is public.
 
-// var functionIsPublic = true
+var functionIsPublic = true
 // var functionIsPublic = false
 
 //True or false: the function returned from "adventure" can access
 //the parameter "mode", and the variable "origin", even after 
 //the function "adventure" has exited.
 
-// var functionCanStillAccess = true
+var functionCanStillAccess = true
 // var functionCanStillAccess = false
 
 
@@ -75,13 +80,13 @@ function careerUpdater(name, city, job) {
 //city "Windsor", and job "Lady-In-Waiting". Store the resulting
 //function in a variable called "annePromotion"
 
-//Code here
+const
 
 
 //Call annePromotion with the arguments "London", "Queen". Store the 
 //result in a variable called "anneResumeEntry1"
 
-//Code here
+const anneResumeEntry1 = annePromotion.call('London', 'Queen')
 
 
 //Then, call annePromotion again with just the argument 
