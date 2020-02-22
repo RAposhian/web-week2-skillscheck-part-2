@@ -10,10 +10,10 @@
 
 var sunsetColors = ["brown", "purple", "pink", "red", "orange", "yellow"]
 
-const sunset = sunsetColors => {
-    let copyArr = [...sunsetColors]
-   copyArr.splice(0, 1, 'blue');
-    return copyArr;
+ function sunset(){
+    let copyArr = sunsetColors
+    copyArr[0] = 'blue'
+    return copyArr
 }
 
 
@@ -25,8 +25,8 @@ const sunset = sunsetColors => {
 
 var sunriseColors = ["yellow", "orange", "red", "pink", "purple", "blue"]
 
-const sunrise = arr => {
-   let newArr = arr.slice(0);
+const sunrise = () => {
+   let newArr = sunriseColors.slice(0)
    newArr.splice(0, 1, 'green');
    return newArr
 }
